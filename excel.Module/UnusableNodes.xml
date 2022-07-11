@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="cDelivery_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="driver_name" Caption="Driver's Name" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="cDelivery">
+              <LayoutGroup Id="cDelivery_col1">
+                <LayoutItem Id="delivery_date" ViewItem="delivery_date" Index="3" RelativeSize="5.0682261208577" Removed="True" />
+                <LayoutItem Id="driver_name" ViewItem="driver_name" />
+              </LayoutGroup>
+              <LayoutGroup Id="cDelivery_col2">
+                <LayoutItem Id="status_pym" RelativeSize="7.0175438596491224" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cOrder_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="cOrder">
+              <LayoutGroup Id="cOrder_col1">
+                <LayoutItem Id="delivery_number" RelativeSize="5.0682261208577" Removed="True" />
+                <LayoutGroup Id="Auto67ece1fe-b1e1-46f2-9b52-8afe8dc29000">
+                  <LayoutItem Id="delivery_number" ViewItem="delivery_number" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cParcel_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="cParcel">
+              <LayoutGroup Id="cParcel_col1">
+                <LayoutItem Id="driver_name" RelativeSize="87.914230019493175" />
+              </LayoutGroup>
+              <LayoutGroup Id="cParcel_col2">
+                <LayoutItem Id="status_tp" RelativeSize="7.0175438596491224" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

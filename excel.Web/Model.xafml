@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems StartupNavigationItem="" />
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="21.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="21.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="cDelivery_DetailView">
+      <Items>
+        <PropertyEditor Id="delivery_date" PropertyName="delivery_date" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="Oid" Removed="True" />
+        <PropertyEditor Id="order_date" PropertyName="order_date" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="recipient_address" PropertyName="recipient_address" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="recipient_id" PropertyName="recipient_id" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="sender_address" PropertyName="sender_address" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="sender_id" PropertyName="sender_id" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="shipping_cost" PropertyName="shipping_cost" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="statuspym" PropertyName="statuspym" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="total" PropertyName="total" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="total_bill" PropertyName="total_bill" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="total_paid" PropertyName="total_paid" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="truck_number" PropertyName="truck_number" IsNewNode="True" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cDelivery" RelativeSize="100">
+              <LayoutGroup Id="cDelivery_col1" RelativeSize="49.9236641221374">
+                <LayoutItem Id="order_number" Index="0" RelativeSize="8.3526682134570773" />
+                <LayoutItem Id="delivery_number" Index="1" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="order_date" ViewItem="order_date" Index="2" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="sender_id" ViewItem="sender_id" Index="3" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="sender_address" ViewItem="sender_address" Index="4" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="recipient_id" ViewItem="recipient_id" Index="5" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="recipient_address" ViewItem="recipient_address" Index="6" RelativeSize="61.484918793503482" />
+                <LayoutItem Id="Oid" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cDelivery_col2" RelativeSize="50.0763358778626">
+                <LayoutItem Id="shipping_cost" ViewItem="shipping_cost" RelativeSize="8.3526682134570773" />
+                <LayoutItem Id="total" ViewItem="total" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="total_bill" ViewItem="total_bill" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="delivery_date" ViewItem="delivery_date" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="id_driver" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="truck_number" ViewItem="truck_number" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="statuspym" ViewItem="statuspym" RelativeSize="6.0324825986078885" />
+                <LayoutItem Id="total_paid" ViewItem="total_paid" RelativeSize="55.45243619489559" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

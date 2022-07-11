@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="cDelivery_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="driver_name" PropertyName="driver_name" Removed="True" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="cDelivery">
+              <LayoutGroup Id="cDelivery_col1">
+                <LayoutItem Id="driver_name" Index="3" RelativeSize="57.506053268765136" Removed="True" />
+                <TabbedGroup Id="Item3" CaptionLocation="Top" Index="4" RelativeSize="36.319612590799032" Removed="True" />
+                <LayoutItem Id="shipping_cost" Index="4" RelativeSize="4.6004842615012107" Removed="True" />
+                <LayoutGroup Id="Auto4ea957e3-d0d6-48bc-b887-1fa2652d3c38">
+                  <LayoutGroup Id="Autoda1fa297-a367-4b29-8001-80f7375eff15">
+                    <LayoutGroup Id="Auto7f798b69-dfa9-47e5-8221-3255f1dbf78e">
+                      <LayoutGroup Id="Auto01cc0cfb-0631-470c-a2d4-5b03b7aa55ce">
+                        <LayoutItem Id="driver_name" ViewItem="driver_name" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

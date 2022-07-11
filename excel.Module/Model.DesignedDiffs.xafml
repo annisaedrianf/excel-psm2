@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="excel">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="21.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="cAdministrator_DetailView">
+      <Items>
+        <PropertyEditor Id="email_admin" Caption="Email Address" />
+        <PropertyEditor Id="name_admin" Caption="Name" />
+        <PropertyEditor Id="password" Caption="Admin's password" />
+        <PropertyEditor Id="phone_admin" Caption="Phone Number" />
+        <PropertyEditor Id="username" Caption="Admin's username" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cAdministrator" RelativeSize="100" Caption="Administrator">
+              <LayoutGroup Id="cAdministrator_col1" RelativeSize="71.049136786188583">
+                <LayoutItem Id="Oid" RelativeSize="7.0175438596491224" />
+                <LayoutItem Id="id_admin" RelativeSize="5.0682261208577" />
+                <LayoutItem Id="name_admin" RelativeSize="5.0682261208577" />
+                <LayoutItem Id="phone_admin" ViewItem="phone_admin" Index="3" RelativeSize="5.0682261208577" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="email_admin" ViewItem="email_admin" Index="4" RelativeSize="5.0682261208577" ShowCaption="True" IsNewNode="True" />
+                <LayoutItem Id="username" ViewItem="username" Index="5" RelativeSize="5.0682261208577" IsNewNode="True" />
+                <LayoutItem Id="password" ViewItem="password" Index="6" RelativeSize="67.641325536062382" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cAdministrator_col2" RelativeSize="28.95086321381142" Caption="cAdministrator_col2">
+                <LayoutItem Id="password" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="username" Index="0" RelativeSize="7.0175438596491224" Removed="True" />
+                <LayoutItem Id="email_admin" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cCustomer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cCustomer" RelativeSize="100" Caption="Customer Information" Direction="Vertical">
+              <LayoutGroup Id="cCustomer_col1" RelativeSize="100">
+                <LayoutItem Id="Oid" RelativeSize="7.0175438596491224" />
+                <LayoutItem Id="id_customer" RelativeSize="5.0682261208577" />
+                <LayoutItem Id="customer_name" Index="2" RelativeSize="5.0682261208577" />
+                <LayoutItem Id="customer_phone" ViewItem="customer_phone" Index="3" RelativeSize="5.0682261208577" IsNewNode="True" />
+                <LayoutItem Id="customer_email" ViewItem="customer_email" CaptionLocation="Left" Index="4" RelativeSize="5.0682261208577" IsNewNode="True" />
+                <LayoutItem Id="customer_address" ViewItem="customer_address" CaptionLocation="Left" Index="5" RelativeSize="72.709551656920084" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cCustomer_col2" RelativeSize="50.151975683890576" Caption="cCustomer_col2" Removed="True">
+                <LayoutItem Id="customer_address" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="customer_email" Index="0" RelativeSize="7.0175438596491224" Removed="True" />
+                <LayoutItem Id="customer_phone" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cDelivery_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cDelivery" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="cDelivery_col1" RelativeSize="100" Caption="cDelivery_col1">
+                <LayoutItem Id="Oid" RelativeSize="8.3526682134570773" />
+                <LayoutGroup Id="Autod3cff73c-cc39-4d96-9ed9-0d0d4393cbfc" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="12.064965197215777" IsNewNode="True">
+                  <LayoutGroup Id="Auto19f71dbc-4b0a-481e-89f1-38285617b1b6" ShowCaption="False" Caption="" Index="0" RelativeSize="49.939393939393938" IsNewNode="True">
+                    <LayoutItem Id="delivery_number" ViewItem="delivery_number" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="id_driver" ViewItem="id_driver" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto3207029d-918b-4300-924e-eb20bf8d202e" ShowCaption="False" Caption="" Index="1" RelativeSize="50.060606060606062" IsNewNode="True">
+                    <LayoutItem Id="delivery_date" ViewItem="delivery_date" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="truck_number" ViewItem="truck_number" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="delivery_number" ViewItem="delivery_number" Index="1" RelativeSize="6.0324825986078885" Removed="True" />
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="2" RelativeSize="79.582366589327151" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Order Details" Direction="Horizontal" IsNewNode="True">
+                    <LayoutGroup Id="Auto62509776-c8e7-4b93-9dad-fde48eeea2c0" ShowCaption="False" Caption="" Index="0" RelativeSize="49.93742177722153" IsNewNode="True">
+                      <LayoutItem Id="order_number" ViewItem="order_number" Index="0" RelativeSize="12.121212121212121" IsNewNode="True" />
+                      <LayoutItem Id="sender_id" ViewItem="sender_id" Index="1" RelativeSize="8.7542087542087543" IsNewNode="True" />
+                      <LayoutItem Id="recipient_id" ViewItem="recipient_id" Index="2" RelativeSize="79.124579124579128" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto83cc91a5-4e15-4aef-a6c4-ec3787070188" ShowCaption="False" Caption="" Index="1" RelativeSize="50.06257822277847" IsNewNode="True">
+                      <LayoutItem Id="order_date" ViewItem="order_date" Index="0" RelativeSize="12.121212121212121" IsNewNode="True" />
+                      <LayoutItem Id="sender_address" ViewItem="sender_address" Index="1" RelativeSize="8.7542087542087543" IsNewNode="True" />
+                      <LayoutItem Id="recipient_address" ViewItem="recipient_address" Index="2" RelativeSize="79.124579124579128" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="Payment Details" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autoeaced817-a2a0-4882-85a4-a46084c74b19" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="12.121212121212121" IsNewNode="True">
+                      <LayoutItem Id="shipping_cost" ViewItem="shipping_cost" Index="0" RelativeSize="49.93742177722153" IsNewNode="True" />
+                      <LayoutItem Id="total" ViewItem="total" Index="1" RelativeSize="50.06257822277847" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto948ac1a5-7c58-4fd8-8209-87075849bbed" ShowCaption="False" Caption="" Index="1" RelativeSize="87.878787878787875" IsNewNode="True">
+                      <LayoutItem Id="statuspym" ViewItem="statuspym" Index="0" RelativeSize="9.96168582375479" IsNewNode="True" />
+                      <LayoutGroup Id="Auto56f84410-4b38-497c-9d30-1fc41849c46e" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="90.038314176245208" IsNewNode="True">
+                        <LayoutItem Id="total_paid" ViewItem="total_paid" Index="0" RelativeSize="49.93742177722153" IsNewNode="True" />
+                        <LayoutItem Id="total_bill" ViewItem="total_bill" Index="1" RelativeSize="50.06257822277847" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="order_date" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+                <LayoutItem Id="order_number" Index="2" RelativeSize="6.0324825986078885" Removed="True" />
+                <LayoutItem Id="recipient_address" ViewItem="recipient_address" Index="2" RelativeSize="79.582366589327151" Removed="True" />
+                <LayoutItem Id="recipient_id" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+                <LayoutItem Id="sender_address" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+                <LayoutItem Id="sender_id" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cDelivery_col2" RelativeSize="50.060606060606062" Caption="cDelivery_col2" Removed="True">
+                <LayoutItem Id="delivery_date" RelativeSize="79.582366589327151" Removed="True" />
+                <LayoutItem Id="id_driver" RelativeSize="73.549883990719252" Removed="True" />
+                <LayoutItem Id="shipping_cost" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="statuspym" RelativeSize="61.484918793503482" Removed="True" />
+                <LayoutItem Id="total" RelativeSize="91.647331786542921" Removed="True" />
+                <LayoutItem Id="total_bill" RelativeSize="85.614849187935036" Removed="True" />
+                <LayoutItem Id="total_paid" RelativeSize="55.45243619489559" Removed="True" />
+                <LayoutItem Id="truck_number" RelativeSize="67.517401392111367" ShowCaption="True" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cDriver_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cDriver" RelativeSize="100" Caption="Driver" Direction="Vertical">
+              <LayoutGroup Id="cDriver_col1" RelativeSize="100">
+                <LayoutItem Id="Oid" RelativeSize="7.0175438596491224" />
+                <LayoutItem Id="id_driver" RelativeSize="5.0682261208577" />
+                <LayoutItem Id="driver_name" ViewItem="driver_name" Index="2" RelativeSize="5.0682261208577" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="driver_phone" ViewItem="driver_phone" Index="3" RelativeSize="5.0682261208577" IsNewNode="True" />
+                <LayoutItem Id="driver_license_number" ViewItem="driver_license_number" Index="4" RelativeSize="5.0682261208577" IsNewNode="True" />
+                <LayoutItem Id="truck_number" ViewItem="truck_number" Index="5" RelativeSize="72.709551656920084" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cDriver_col2" RelativeSize="26.294820717131476" Caption="cDriver_col2" Removed="True">
+                <LayoutItem Id="driver_license_number" Index="0" RelativeSize="7.0175438596491224" Removed="True" />
+                <LayoutItem Id="truck_number" ViewItem="truck_number" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="driver_phone" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cOrder_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cOrder" Caption="Record Order" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="cOrder_col1" RelativeSize="100">
+                <LayoutItem Id="Oid" RelativeSize="8.3526682134570773" />
+                <LayoutGroup Id="Auto67ece1fe-b1e1-46f2-9b52-8afe8dc29000" ShowCaption="False" Caption="Auto67ece1fe-b1e1-46f2-9b52-8afe8dc29000(6)" Direction="Vertical" Index="1" RelativeSize="3.4802784222737819" IsNewNode="True">
+                  <LayoutItem Id="delivery_number" ViewItem="delivery_number" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autobf876eb3-4fb0-4314-932c-7a2cd1556dc3" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="6.0324825986078885" IsNewNode="True">
+                  <LayoutItem Id="order_number" ViewItem="order_number" Index="0" RelativeSize="49.948186528497409" IsNewNode="True" />
+                  <LayoutItem Id="order_date" ViewItem="order_date" Index="1" RelativeSize="50.051813471502591" IsNewNode="True" />
+                </LayoutGroup>
+                <TabbedGroup Id="Item3" CaptionLocation="Top" Index="3" RelativeSize="49.187935034802784" IsNewNode="True">
+                  <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Personal Information" IsNewNode="True">
+                    <LayoutItem Id="sender_id" ViewItem="sender_id" Index="0" RelativeSize="20.454545454545453" IsNewNode="True" />
+                    <LayoutItem Id="sender_email" ViewItem="sender_email" Index="1" RelativeSize="14.772727272727273" IsNewNode="True" />
+                    <LayoutItem Id="sender_address" ViewItem="sender_address" Index="2" RelativeSize="14.772727272727273" IsNewNode="True" />
+                    <LayoutItem Id="recipient_id" ViewItem="recipient_id" Index="3" RelativeSize="14.772727272727273" IsNewNode="True" />
+                    <LayoutItem Id="recipient_email" ViewItem="recipient_email" Index="4" RelativeSize="14.772727272727273" IsNewNode="True" />
+                    <LayoutItem Id="recipient_address" ViewItem="recipient_address" Index="5" RelativeSize="20.454545454545453" IsNewNode="True" />
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="recipient_email" RelativeSize="5.0682261208577" Index="3" Removed="True" />
+                <LayoutItem Id="recipient_id" RelativeSize="5.0682261208577" Index="3" Removed="True" />
+                <LayoutItem Id="sender_address" RelativeSize="5.0682261208577" Index="3" Removed="True" />
+                <LayoutItem Id="sender_email" RelativeSize="5.0682261208577" Index="3" Removed="True" />
+                <LayoutGroup Id="Autoaa815320-b11f-4397-b236-6cbef2e18ff0" ShowCaption="False" Caption="Autoaa815320-b11f-4397-b236-6cbef2e18ff0(17)" Direction="Horizontal" Index="4" RelativeSize="15.777262180974478" IsNewNode="True">
+                  <LayoutGroup Id="Auto886f676d-bff6-43ee-8e14-da5f3078e603" ShowCaption="False" Caption="Auto886f676d-bff6-43ee-8e14-da5f3078e603(18)" Index="0" RelativeSize="49.740932642487046" IsNewNode="True">
+                    <LayoutItem Id="type_good" ViewItem="type_good" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="weight_good" ViewItem="weight_good" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoe110d575-884f-4244-bd42-4c0771045241" ShowCaption="False" Caption="Autoe110d575-884f-4244-bd42-4c0771045241(21)" Index="1" RelativeSize="50.259067357512954" IsNewNode="True">
+                    <LayoutItem Id="tax" ViewItem="tax" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="gst" ViewItem="gst" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Autocbd95b8e-1f4f-465d-a0e2-5caf6e7cd0c8" ShowCaption="False" Caption="Autocbd95b8e-1f4f-465d-a0e2-5caf6e7cd0c8(20)" Direction="Vertical" Index="5" RelativeSize="8.8167053364269137" IsNewNode="True">
+                  <LayoutItem Id="shipping_cost" ViewItem="shipping_cost" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="total" ViewItem="total" Index="6" RelativeSize="8.3526682134570773" IsNewNode="True" />
+                <LayoutItem Id="order_date" RelativeSize="5.0682261208577" Removed="True" />
+                <LayoutItem Id="order_number" Removed="True" />
+                <LayoutItem Id="sender_id" RelativeSize="5.0682261208577" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cOrder_col2" RelativeSize="0.1519756838905775" Caption="cOrder_col2" Removed="True">
+                <LayoutItem Id="gst" RelativeSize="7.0175438596491224" Index="0" Removed="True" />
+                <LayoutItem Id="shipping_cost" RelativeSize="7.0175438596491224" Index="0" Removed="True" />
+                <LayoutItem Id="tax" RelativeSize="7.3170731707317076" Index="0" Removed="True" />
+                <LayoutItem Id="total" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="type_good" RelativeSize="7.0175438596491224" Index="0" Removed="True" />
+                <LayoutItem Id="weight_good" RelativeSize="7.0175438596491224" Index="0" Removed="True" />
+                <LayoutItem Id="recipient_address" RelativeSize="7.0175438596491224" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="cParcel_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="cParcel" Caption="Track Parcel" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="cParcel_col1" RelativeSize="100" Caption="cParcel_col1">
+                <LayoutItem Id="Oid" RelativeSize="8.3720930232558146" />
+                <LayoutGroup Id="Auto302547db-5d01-42cb-b8e8-c4f35bc60677" ShowCaption="False" Caption="Auto302547db-5d01-42cb-b8e8-c4f35bc60677(6)" Direction="Horizontal" Index="1" RelativeSize="27.906976744186046" IsNewNode="True">
+                  <LayoutGroup Id="Autobd57e827-f143-42a9-afa5-c4ef228fcfef" ShowCaption="False" Caption="Autobd57e827-f143-42a9-afa5-c4ef228fcfef(7)" Index="0" RelativeSize="49.844559585492227" IsNewNode="True">
+                    <LayoutItem Id="delivery_number" ViewItem="delivery_number" Index="0" RelativeSize="28.333333333333332" IsNewNode="True" />
+                    <LayoutItem Id="sender_id" ViewItem="sender_id" Index="1" RelativeSize="21.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="sender_address" ViewItem="sender_address" Index="2" RelativeSize="21.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="sender_email" ViewItem="sender_email" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto6c0a8f54-08b3-48fb-9c00-0635b09fc1ec" ShowCaption="False" Caption="Auto6c0a8f54-08b3-48fb-9c00-0635b09fc1ec(12)" Index="1" RelativeSize="50.155440414507773" IsNewNode="True">
+                    <LayoutItem Id="delivery_date" ViewItem="delivery_date" Index="0" RelativeSize="28.333333333333332" IsNewNode="True" />
+                    <LayoutItem Id="recipient_id" ViewItem="recipient_id" Index="1" RelativeSize="21.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="recipient_address" ViewItem="recipient_address" Index="2" RelativeSize="21.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="recipient_email" ViewItem="recipient_email" Index="3" RelativeSize="28.333333333333332" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Item4" ShowCaption="True" Caption="    " CaptionLocation="Top" Index="2" RelativeSize="63.720930232558139" IsNewNode="True">
+                  <LayoutGroup Id="Autoce7861a3-32fe-42ec-a9a9-16f5e9e95c0d" ShowCaption="False" Caption="Autoce7861a3-32fe-42ec-a9a9-16f5e9e95c0d(18)" Direction="Horizontal" Index="0" RelativeSize="18.803418803418804" IsNewNode="True">
+                    <LayoutItem Id="id_driver" ViewItem="id_driver" Index="0" RelativeSize="49.839914621131271" IsNewNode="True" />
+                    <LayoutItem Id="truck_number" ViewItem="truck_number" Index="1" RelativeSize="50.160085378868729" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="statustp" ViewItem="statustp" Index="1" RelativeSize="11.111111111111111" IsNewNode="True" />
+                  <LayoutItem Id="arrival_date" ViewItem="arrival_date" Index="2" RelativeSize="11.111111111111111" IsNewNode="True" />
+                  <LayoutItem Id="notes" ViewItem="notes" Index="3" RelativeSize="11.111111111111111" IsNewNode="True" />
+                  <LayoutItem Id="Item1" SizeConstraintsType="Custom" MinSize="198, 19" Index="4" RelativeSize="47.863247863247864" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="sender_address" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+                <LayoutItem Id="sender_email" ViewItem="sender_email" Index="2" RelativeSize="6.0324825986078885" Removed="True" />
+                <LayoutItem Id="sender_id" RelativeSize="6.0324825986078885" Index="2" Removed="True" />
+                <LayoutItem Id="recipient_id" RelativeSize="67.517401392111367" Index="5" Removed="True" />
+                <LayoutItem Id="delivery_date" RelativeSize="6.0324825986078885" Removed="True" />
+                <LayoutItem Id="delivery_number" RelativeSize="6.0324825986078885" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="cParcel_col2" RelativeSize="50.1779359430605" Caption="cParcel_col2" Removed="True">
+                <LayoutItem Id="recipient_email" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="id_driver" RelativeSize="91.647331786542921" Index="1" Removed="True" />
+                <LayoutItem Id="truck_number" RelativeSize="85.614849187935036" Index="2" Removed="True" />
+                <LayoutItem Id="statustp" RelativeSize="79.582366589327151" Index="3" Removed="True" />
+                <LayoutItem Id="arrival_date" RelativeSize="67.517401392111367" Removed="True" />
+                <LayoutItem Id="notes" RelativeSize="87.914230019493175" Removed="True" />
+                <LayoutItem Id="recipient_address" RelativeSize="8.3526682134570773" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
